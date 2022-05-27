@@ -1,0 +1,418 @@
+Задание1 (команды GITBASH)
+
+1) Посмотреть где я -- pwd
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov
+$ pwd
+/e/Course_VKsendzov
+
+2) Создать папку -- mkdir bash
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov
+$ mkdir bash
+
+3) Зайти в папку bash -- cd bash/
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov
+$ cd bash/
+
+4) создать 3 папки -- mkdir papka1 papka2 papka3
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash
+$ mkdir papka1 papka2 papka3
+
+5) Зайти в любоую папку -- cd papka1
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash
+$ cd papka1
+
+6) Создать 5 файлов (3 txt, 2 json) -- touch file1.txt file2.txt file3.txt file4.json file5.json
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash/papka1
+$ touch file1.txt file2.txt file3.txt file4.json file5.json
+
+7) Создать 3 папки -- mkdir p1 p2 p3
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash/papka1
+$ mkdir p1 p2 p3
+
+8) Вывести список содержимого папки -- ls
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash/papka1
+$ ls
+file1.txt  file2.txt  file3.txt  file4.json  file5.json  p1/  p2/  p3/
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash/papka1
+$ ls -l
+total 0
+-rw-r--r-- 1 MAKS 197121 0 May 19 10:08 file1.txt
+-rw-r--r-- 1 MAKS 197121 0 May 19 10:08 file2.txt
+-rw-r--r-- 1 MAKS 197121 0 May 19 10:08 file3.txt
+-rw-r--r-- 1 MAKS 197121 0 May 19 10:08 file4.json
+-rw-r--r-- 1 MAKS 197121 0 May 19 10:08 file5.json
+drwxr-xr-x 1 MAKS 197121 0 May 19 10:09 p1/
+drwxr-xr-x 1 MAKS 197121 0 May 19 10:09 p2/
+drwxr-xr-x 1 MAKS 197121 0 May 19 10:09 p3/
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash/papka1
+$ ls -la
+total 2048
+drwxr-xr-x 1 MAKS 197121 0 May 19 10:09 ./
+drwxr-xr-x 1 MAKS 197121 0 May 19 10:05 ../
+-rw-r--r-- 1 MAKS 197121 0 May 19 10:08 file1.txt
+-rw-r--r-- 1 MAKS 197121 0 May 19 10:08 file2.txt
+-rw-r--r-- 1 MAKS 197121 0 May 19 10:08 file3.txt
+-rw-r--r-- 1 MAKS 197121 0 May 19 10:08 file4.json
+-rw-r--r-- 1 MAKS 197121 0 May 19 10:08 file5.json
+drwxr-xr-x 1 MAKS 197121 0 May 19 10:09 p1/
+drwxr-xr-x 1 MAKS 197121 0 May 19 10:09 p2/
+drwxr-xr-x 1 MAKS 197121 0 May 19 10:09 p3/
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash/papka1
+$ ls -R
+.:
+file1.txt  file2.txt  file3.txt  file4.json  file5.json  p1/  p2/  p3/
+
+./p1:
+
+./p2:
+
+./p3:
+
+9) + Открыть любой txt файл -- vim file1.txt
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash/papka1
+$ vim file1.txt
+
+10) + написать туда что-нибудь, любой текст. В открывшемся редакторе нажимаем "i", пишем текст, 
+
+11) + сохранить и выйти -- жмем CTRL+C, набираем :wq, жмем enter
+
+	-- cat file1.txt (смотрим содержимое file1.txt)
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash/papka1
+$ cat file1.txt
+qwerty
+Hello, I`m user)))
+
+	-- cat >> file1.txt (добавляем строку 123ок в файл file1.tx)
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash/papka1
+$ cat >> file1.txt
+123ok
+
+	-- cat file1.txt (смотрим содержимое file1.txt)
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash/papka1
+$ cat file1.txt
+qwerty
+Hello, I`m user)))
+
+123ok
+
+12) Выйти из папки на уровень выше.
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash/papka1
+$ cd ..
+
+	-- ls -l (посмотрели содержимое папки bash)
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash
+$ ls -l
+total 2048
+drwxr-xr-x 1 MAKS 197121 0 May 19 10:13 papka1/
+drwxr-xr-x 1 MAKS 197121 0 May 19 10:05 papka2/
+drwxr-xr-x 1 MAKS 197121 0 May 19 10:05 papka3/
+
+	-- ls -R (посмотрели содержимое папки bash в развернутом виде)
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash
+$ ls -R
+.:
+papka1/  papka2/  papka3/
+
+./papka1:
+file1.txt  file2.txt  file3.txt  file4.json  file5.json  p1/  p2/  p3/
+
+./papka1/p1:
+
+./papka1/p2:
+
+./papka1/p3:
+
+./papka2:
+
+./papka3:
+
+13) переместить любые 2 файла, которые вы создали, в любую другую папку -- mv papka1/file2.txt papka1/p2
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash
+$ mv papka1/file2.txt papka1/p2
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash
+$ mv papka1/file3.txt papka2
+
+14) скопировать любые 2 файла, которые вы создали, в любую другую папку -- cp papka1/file4.json papka1/p3
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash
+$ cp papka1/file4.json papka1/p3
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash
+$ cp papka1/file5.json papka3
+
+	-- ls -R (посмотрели содержимое папки bash в развернутом виде)
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash
+$ ls -R
+.:
+papka1/  papka2/  papka3/
+
+./papka1:
+file1.txt  file4.json  file5.json  p1/  p2/  p3/
+
+./papka1/p1:
+
+./papka1/p2:
+file2.txt
+
+./papka1/p3:
+file4.json
+
+./papka2:
+file3.txt
+
+./papka3:
+file5.json
+
+15) Найти файл по имени -- find . -name fil4.json
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash
+$ find . -name fil4.json
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash
+$ find . -name file4.json
+./papka1/file4.json
+./papka1/p3/file4.json
+
+16) просмотреть содержимое в реальном времени (команда grep) изучите как она работает
+
+	-- tail -c 2 file1.txt (вывод 2 последних байтов из файла)
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash/papka1
+$ tail -c 2 file1.txt
+bn
+
+	-- tail -c 5 file1.txt (вывод 5 последних байтов из файла)
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash/papka1
+$ tail -c 5 file1.txt
+jvjbn
+
+	-- tail -v file1.txt (выводит информацию о файле и 10 последних строк)
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash/papka1
+$ tail -v file1.txt
+==> file1.txt <==
+
+123ok
+wqerhweih
+dfsaf
+ghjhgj
+cvncn
+qwerwt
+srthhkjk
+zdfbdb
+vjvjbn
+
+
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash/papka1
+$ tail --retry file1.txt
+tail: warning: --retry ignored; --retry is useful only when following
+
+123ok
+wqerhweih
+dfsaf
+ghjhgj
+cvncn
+qwerwt
+srthhkjk
+zdfbdb
+vjvjbn
+
+	-- tail -5 file1.txt p2/file2.txt (выводит имена файлов и 5 последних строк из файла file1.txt текущей папки и file2.txt папки р2)
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash/papka1
+$ tail -5 file1.txt p2/file2.txt
+tail: option used in invalid context -- 5
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash/papka1
+$ tail -n5 file1.txt p2/file2.txt
+==> file1.txt <==
+cvncn
+qwerwt
+srthhkjk
+zdfbdb
+vjvjbn
+==> p2/file2.txt <==
+user
+
+nnfnbngj
+
+hello
+
+ 	-- tail -n5 -q file1.txt p2/file2.txt (выводит 5 последних строк из файла file1.txt текущей папки и file2.txt папки р2)
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash/papka1
+$ tail -n5 -q file1.txt p2/file2.txt
+cvncn
+qwerwt
+srthhkjk
+zdfbdb
+vjvjbnuser
+
+nnfnbngj
+
+hello
+
+	-- tail -c 10 file1.txt p2/file2.txt (выводит имена файлов и 10 последних байт из файла file1.txt текущей папки и file2.txt папки р2)
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash/papka1
+$ tail -c 10 file1.txt p2/file2.txt
+==> file1.txt <==
+bdb
+vjvjbn
+==> p2/file2.txt <==
+gj
+
+hello
+
+	-- tail -c 10 -q file1.txt p2/file2.txt (выводит 10 последних байт из файла file1.txt текущей папки и file2.txt папки р2)
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash/papka1
+$ tail -c 10 -q file1.txt p2/file2.txt
+bdb
+vjvjbngj
+
+hello
+
+	tail -c 10 file1.txt p2/file2.txt >> File (выводит 10 последних байт из файла file1.txt текущей папки и file2.txt папки р2 и сохраняет их в файл File)	
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash/papka1
+$ tail -c 10 file1.txt p2/file2.txt >> File
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash/papka1
+$ ls
+File  file1.txt  file4.json  file5.json  p1/  p2/  p3/
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash/papka1
+$ cat File
+==> file1.txt <==
+bdb
+vjvjbn
+==> p2/file2.txt <==
+gj
+
+hello
+
+17) вывести несколько первых строк из текстового файла -- head papka1/file1.txt (выводим первые строки (по умолчанию 10) из файла file1.txt папки papka1)
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash
+$ head papka1/file1.txt
+qwerty
+Hello, I`m user)))
+
+123ok
+wqerhweih
+dfsaf
+ghjhgj
+cvncn
+qwerwt
+
+	-- head -n4 papka1/file1.txt (выводим первые 4 строки из файла file1.txt папки papka1)
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash
+$ head -n4 papka1/file1.txt
+qwerty
+Hello, I`m user)))
+
+123ok
+
+	-- head -v -n4 papka1/file1.txt (выводим название файла и первые 4 строки из файла file1.txt папки papka1)
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash
+$ head -v -n4 papka1/file1.txt
+==> papka1/file1.txt <==
+qwerty
+Hello, I`m user)))
+
+123ok
+
+18) вывести несколько последних строк из текстового файла -- tail papka1/file1.txt (выводим последние строки (по умолчанию 10) из файла file1.txt папки papka1)
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash
+$ tail papka1/file1.txt
+qwerty
+Hello, I`m user)))
+
+123ok
+wqerhweih
+dfsaf
+ghjhgj
+cvncn
+qwerwt
+
+	-- tail -n4 papka1/file1.txt (выводим последние 4 строки из файла file1.txt папки papka1)
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash
+$ tail -n4 papka1/file1.txt
+dfsaf
+ghjhgj
+cvncn
+qwerwt
+
+	-- перешли в папку papka1
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash
+$ cd papka1
+
+	-- посмотрели содержимое papka1
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash/papka1
+$ ls
+file1.txt  file4.json  file5.json  p1/  p2/  p3/
+
+19) просмотреть содержимое длинного файла (команда less) изучите как она работает -- less file1.txt (в открывшемся редакторе через / нашли нужный текст, через q вышли)
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash/papka1
+$ less file1.txt
+
+20) вывести дату и время -- date
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash
+$ date
+Thu May 19 12:08:57     2022
+
+	-- date +%A%d%B (выводит слитно день, дату, месяц слитно)
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash
+$ date +%A%d%B
+Thursday19May
+
+	-- date +"%A %d %B %C" (выводит раздельно день, дату, месяц, век)
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash
+$ date +"%A %d %B %C"
+Thursday 19 May 20
+
+	-- date +"%A %d %B %Y" (выводит раздельно день, дату, месяц, год)
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash
+$ date +"%A %d %B %Y"
+Thursday 19 May 2022
+
+	-- date +"%A %d %B %Y %T" (выводит раздельно день, дату, месяц, год, время)
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash
+$ date +"%A %d %B %Y %T"
+Thursday 19 May 2022 12:13:59

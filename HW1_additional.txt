@@ -1,0 +1,44 @@
+$ curl -L http://162.55.220.72:5005/terminal-hw-request
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   283  100   283    0     0   4200      0 --:--:-- --:--:-- --:--:--  4287{
+  "Intro": "Hello!! This is your the first response from server",
+  "Tasks": {
+    "Task_1": "Send the next URL in terminal: http://162.55.220.72:5005/get_method?name=(set_your_String)&age=(set_your_number)",
+    "result": [
+      "Your_String",
+      "Your_number"
+    ]
+  }
+}
+
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash
+$ curl -L http://162.55.220.72:5005/get_method?name=(set_your_String)&age=(set_your_number)
+bash: syntax error near unexpected token `('
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash
+$ curl -L http://162.55.220.72:5005/get_method?name=Maks&age=32
+[2] 1037
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100    22  100    22    0     0    290      0 --:--:-- --:--:-- --:--:--   301[
+  "Maks",
+  null
+]
+
+[2]-  Done                    curl -L http://162.55.220.72:5005/get_method?name=Maks
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash
+$
+
+
+
+$ curl -L "http://162.55.220.72:5005/get_method?name=Maks&age=32"
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100    22  100    22    0     0    305      0 --:--:-- --:--:-- --:--:--   314[
+  "Maks",
+  "32"
+]
+
