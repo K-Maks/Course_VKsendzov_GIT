@@ -113,3 +113,62 @@ Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
 To https://github.com/K-Maks/Course_VKsendzov_GIT.git
    c05f0df..0586d78  main -> main
 
+12) Создаём файл
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash/Course_VKsendzov_GIT (main)
+$ touch Work_with_GITHUB.txt
+
+13) Записываем в него шаги 1-11
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash/Course_VKsendzov_GIT (main)
+$ vim Work_with_GITHUB.txt
+
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash/Course_VKsendzov_GIT (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Work_with_GITHUB.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+14) Индексируем файл Work_with_GITHUB.txt
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash/Course_VKsendzov_GIT (main)
+$ git add Work_with_GITHUB.txt
+
+15) Проверяем состояние локального репозитория
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash/Course_VKsendzov_GIT (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Work_with_GITHUB.txt
+
+16) Делаем снимок проиндексированых файлов и добавляем коментарий
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash/Course_VKsendzov_GIT (main)
+$ git commit -m 'Activities with GITHUD'
+[main c1ab5b7] Activities with GITHUD
+ 1 file changed, 115 insertions(+)
+ create mode 100644 Work_with_GITHUB.txt
+
+17) Добавляем файлы на удалённый репозиторий
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash/Course_VKsendzov_GIT (main)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.56 KiB | 533.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/K-Maks/Course_VKsendzov_GIT.git
+   0586d78..c1ab5b7  main -> main
