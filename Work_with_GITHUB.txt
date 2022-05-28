@@ -172,3 +172,8 @@ Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
 remote: Resolving deltas: 100% (1/1), completed with 1 local object.
 To https://github.com/K-Maks/Course_VKsendzov_GIT.git
    0586d78..c1ab5b7  main -> main
+
+git fetch
+
+git pull
+
