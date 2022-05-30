@@ -1,0 +1,627 @@
+JSON
+ 4. Создать внешний репозиторий c названием JSON.
+
+ 5. Клонировать репозиторий JSON на локальный компьютер.
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash
+$ git clone https://github.com/K-Maks/JSON.git
+Cloning into 'JSON'...
+warning: You appear to have cloned an empty repository.
+
+ 6. Внутри локального JSON создать файл “new.json”.
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash
+$ touch JSON/new.json
+
+ 7. Добавить файл под гит.
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash
+$ cd JSON/
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash/JSON (main)
+$ git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        new.json
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash/JSON (main)
+$ git add new.json
+
+ 8. Закоммитить файл.
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash/JSON (main)
+$ git commit -m 'add new.json'
+[main (root-commit) f432b43] add new.json
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 new.json
+
+ 9. Отправить файл на внешний GitHub репозиторий.
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash/JSON (main)
+$ git push
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 215 bytes | 107.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/K-Maks/JSON.git
+ * [new branch]      main -> main
+
+ 10. Отредактировать содержание файла “new.json” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON.
+
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash/JSON (main)
+$ vim new.json
+
+в открывшемся редакторе нажать "i" и ввести
+
+{
+  "Full_Name": "Косилов Максим Сергеевич",
+  "Age": 32,
+  "number_of_pets": 0,
+  "Desired_salary": ">800$"
+}
+
+нажать "esc", нажать ":", ввести "wq", нажать "enter"
+
+ 11. Отправить изменения на внешний репозиторий.
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash/JSON (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   new.json
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash/JSON (main)
+$ git add new.json
+warning: LF will be replaced by CRLF in new.json.
+The file will have its original line endings in your working directory
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash/JSON (main)
+$ git commit -m 'edit new.json'
+[main 54a826f] edit new.json
+ 1 file changed, 6 insertions(+)
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash/JSON (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 364 bytes | 182.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/K-Maks/JSON.git
+   f432b43..54a826f  main -> main
+
+ 12. Создать файл preferences.json
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash/JSON (main)
+$ touch preferences.json
+
+ 13. В файл preferences.json добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате JSON.
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash/JSON (main)
+$ vim preferences.json
+
+в открывшемся редакторе нажать "i" и ввести
+
+{
+        "Favorite_movie": "Lord of the Rings",
+        "Favourite_series": "Billions",
+        "Favorite_food": "Борщ",
+        "Favorite_time_of_year": "All",
+        "Country_you_would_like_to_visit": "Canada, New Zealand"
+}
+
+нажать "esc", нажать ":", ввести "wq", нажать "enter"
+
+ 14. Создать файл sklls.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash/JSON (main)
+$ touch skills.json
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash/JSON (main)
+$ vim skills.json
+
+в открывшемся редакторе нажать "i" и ввести
+
+{
+        "Theory_of_Software": "Client-server architecture, SDLS, Kind_of_Software_testing, Testing_documentation",
+        "Testing_directions": "web-testing, mobile-tisting, API-testing",
+        "API_testing": "Postman"
+}
+
+нажать "esc", нажать ":", ввести "wq", нажать "enter"
+
+ 15. Отправить сразу 2 файла на внешний репозиторий.
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash/JSON (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        preferences.json
+        skills.json
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash/JSON (main)
+$ git add preferences.json skills.json
+warning: LF will be replaced by CRLF in preferences.json.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in skills.json.
+The file will have its original line endings in your working directory
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash/JSON (main)
+$ git commit -m 'add preferences and skills'
+[main 350253e] add preferences and skills
+ 2 files changed, 13 insertions(+)
+ create mode 100644 preferences.json
+ create mode 100644 skills.json
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash/JSON (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 617 bytes | 205.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/K-Maks/JSON.git
+   54a826f..350253e  main -> main
+
+ 16. На веб интерфейсе создать файл bug_report.json.
+
+На веб интерфейсе GITHUB в личном кабинете в репозитории JSON нажимаем АDD FILE, выбираем Create New File
+
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+
+Нажть внизу страницы Commit new file
+
+ 18. На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON.
+
+На веб интерфейсе нажать на файл bug_report.json, нажать на кнопку "Edit this file"(карандаш), внести изменения
+
+ 19. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+
+Прокрутить вниз страницы, внести название изменения в поле Commit changes, нажать "Commit changes"
+
+ 20. Синхронизировать внешний и локальный репозиторий JSON
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash/JSON (main)
+$ git fetch
+remote: Enumerating objects: 7, done.
+remote: Counting objects: 100% (7/7), done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 6 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (6/6), 1.76 KiB | 6.00 KiB/s, done.
+From https://github.com/K-Maks/JSON
+   350253e..df9752c  main       -> origin/main
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash/JSON (main)
+$ git pull
+Updating 350253e..df9752c
+Fast-forward
+ bug_report.json | 13 +++++++++++++
+ 1 file changed, 13 insertions(+)
+ create mode 100644 bug_report.json
+
+XML
+ 21. Создать внешний репозиторий c названием XML.
+
+В личном кабинете GITHUB перейти на вкладку Repositoties.
+Нажать кнопку New.
+В поле Repository name ввести название репозитория.
+Нажать кнопку Create repository.
+
+ 22. Клонировать репозиторий XML на локальный компьютер.
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash
+$ git clone https://github.com/K-Maks/XML.git
+Cloning into 'XML'...
+warning: You appear to have cloned an empty repository.
+
+ 23. Внутри локального XML создать файл “new.xml”.
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash
+$ touch XML/new.xml
+
+ 24. Добавить файл под гит.
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash
+$ cd XML/
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash/XML (main)
+$ git add new.xml
+
+ 25. Закоммитить файл.
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash/XML (main)
+$ git commit -m 'add new.xml'
+[main (root-commit) bc289b8] add new.xml
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 new.xml
+
+ 26. Отправить файл на внешний GitHub репозиторий.
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash/XML (main)
+$ git push
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 213 bytes | 106.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/K-Maks/XML.git
+ * [new branch]      main -> main
+
+ 27. Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML.
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash/XML (main)
+$ vim new.xml
+
+в открывшемся редакторе нажать "i" и ввести
+
+<?xml version="1.0"?>
+<Person>
+        <Full_Name>Косилов Максим Сергеевич</Full_Name>
+        <Age>32</Age>
+        <number_of_pets>0</number_of_pets>
+        <Desired_salary>more 800$</Desired_salary>
+</Person>
+
+нажать "esc", нажать ":", ввести "wq", нажать "enter"
+
+ 28. Отправить изменения на внешний репозиторий.
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash/XML (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   new.xml
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash/XML (main)
+$ git add new.xml
+warning: LF will be replaced by CRLF in new.xml.
+The file will have its original line endings in your working directory
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash/XML (main)
+$ git commit -m 'chaging new.xml'
+[main 7807c87] chaging new.xml
+ 1 file changed, 7 insertions(+)
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash/XML (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 407 bytes | 203.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/K-Maks/XML.git
+   bc289b8..7807c87  main -> main
+
+ 29. Создать файл preferences.xml
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash/XML (main)
+$ touch preferences.xml
+
+ 30. В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML.
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash/XML (main)
+$ vim preferences.xml
+
+в открывшемся редакторе нажать "i" и ввести
+
+<?xml version="1.0"?>
+<preferences>
+        <Favorite_movie>Lord of the Rings"</Favorite_movie>
+        <Favourite_series>Billions</Favourite_series>
+        <Favorite_food>Борщ</Favorite_food>
+        <Favorite_time_of_year>All</Favorite_time_of_year>
+        <Country_you_would_like_to_visit>Canada, New Zealand</Country_you_would_like_to_visit>
+</preferences>
+
+нажать "esc", нажать ":", ввести "wq", нажать "enter"
+
+ 31. Создать файл sklls.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash/XML (main)
+$ vim skills.xml
+
+в открывшемся редакторе нажать "i" и ввести
+
+<?xml version="1.0"?>
+<skills>
+        <Theory_of_Software>Client-server architecture, SDLS, Kind_of_Software_testing, Testing_documentation</Theory_of_Software>
+        <Testing_directions>web-testing, mobile-tisting, API-testing</Testing_directions>
+        <API_testing>Postman</API_testing>
+</skills>
+
+нажать "esc", нажать ":", ввести "wq", нажать "enter"
+
+ 32. Сделать коммит в одну строку.
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash/XML (main)
+$ git add preferences.xml skills.xml ; git commit -m 'add preferences and skills'
+warning: LF will be replaced by CRLF in preferences.xml.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in skills.xml.
+The file will have its original line endings in your working directory
+[main c7212ba] add preferences and skills
+ 2 files changed, 14 insertions(+)
+ create mode 100644 preferences.xml
+ create mode 100644 skills.xml
+
+ 33. Отправить сразу 2 файла на внешний репозиторий.
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash/XML (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 690 bytes | 230.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/K-Maks/XML.git
+   7807c87..c7212ba  main -> main
+
+ 34. На веб интерфейсе создать файл bug_report.xml.
+
+На веб интерфейсе GITHUB в личном кабинете в репозитории XML нажимаем АDD FILE, выбираем Create New File
+
+ 35. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+
+Нажть внизу страницы Commit new file
+
+ 36. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML.
+
+На веб интерфейсе GITHUB нажать на файл bug_report.json, нажать на кнопку "Edit this file"(карандаш), ввести:
+
+<?xml version="1.0"?>
+<bug_report>
+  <Bug template>widget hasn`t rounded corners</Bug template> 
+  <Telegram nickname>@KMaksymS</Telegram nickname>
+  <Bug_id>40</Bug_id>
+  <Title>after placing the widget on the desktop, the widget has right corners</Title>
+  <Severity>Midle</Severity>
+  <Priority>Low</Priority>
+  <Environment>1) OnePlus Nord AC2001 (Oxygen OS 11.1.10.10.AC01DA), Android 11; 2) Honor 20 Android 10 Magic UI 4.0.0; 3) Xiaomi Redmi 5 Plus, android 8.1.0, MIU Global 11.0.2.0; 4)Honor 30, Android 10 Magic UI 4.0.0; 5) Samsung Galaxy A32, Android 11 (A325FXXU1AUH1); 6) Samsung S9 +, Android 10, One UI 2; 7) Pixel 4, Android 11; 8) Xiaomi Redmi Note 9S, Android 11 RKQ1.200826.02, MIUI Global 12.5.5</Environment>
+  <Precondition>App installed on a phone</Precondition>
+  <STR>1) Open App; 2) Click button “add widget”</STR>
+  <AR>On the desktop the widget arises with right corners</AR>
+  <ER>On the desktop the widget arises with rounded corners</ER>
+</bug_report>
+
+ 37. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+
+Прокрутить вниз страницы, внести название изменения в поле Commit changes, нажать "Commit changes"
+
+ 38. Синхронизировать внешний и локальный репозиторий XML
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash/XML (main)
+$ git fetch
+remote: Enumerating objects: 7, done.
+remote: Counting objects: 100% (7/7), done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 6 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (6/6), 1.82 KiB | 9.00 KiB/s, done.
+From https://github.com/K-Maks/XML
+   c7212ba..d473ede  main       -> origin/main
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash/XML (main)
+$ git pull
+Updating c7212ba..d473ede
+Fast-forward
+ bug_report.xml | 14 ++++++++++++++
+ 1 file changed, 14 insertions(+)
+ create mode 100644 bug_report.xml
+
+TXT
+ 1. Создать внешний репозиторий c названием TXT.
+
+В личном кабинете GITHUB перейти на вкладку Repositoties.
+Нажать кнопку New.
+В поле Repository name ввести название репозитория.
+Нажать кнопку Create repository.
+
+ 2. Клонировать репозиторий TXT на локальный компьютер.
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash
+$ git clone https://github.com/K-Maks/TXT.git
+Cloning into 'TXT'...
+warning: You appear to have cloned an empty repository.
+
+ 3. Внутри локального TXT создать файл “new.txt”.
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash
+$ touch TXT/new.txt
+
+ 4. Добавить файл под гит.
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash/TXT (main)
+$ git add new.txt
+
+ 5. Закоммитить файл.
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash/TXT (main)
+$ git commit -m 'add new.txt'
+[main (root-commit) d61aede] add new.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 new.txt
+
+ 6. Отправить файл на внешний GitHub репозиторий.
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash/TXT (main)
+$ git push
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 214 bytes | 71.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/K-Maks/TXT.git
+ * [new branch]      main -> main
+
+ 7. Отредактировать содержание файла “new.txt” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате TXT.
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash/TXT (main)
+$ vim new.txt
+
+в открывшемся редакторе нажать "i" и ввести
+
+Косилов Максим Сергеевич
+32 года
+Домашных животных нет
+Желаемамая зарплата больше 800$
+
+нажать "esc", нажать ":", ввести "wq", нажать "enter"
+
+ 8. Отправить изменения на внешний репозиторий.
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash/TXT (main)
+$ git add new.txt
+warning: LF will be replaced by CRLF in new.txt.
+The file will have its original line endings in your working directory
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash/TXT (main)
+$ git commit -m 'edit new.txt'
+[main 1742703] edit new.txt
+ 1 file changed, 4 insertions(+)
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash/TXT (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 366 bytes | 183.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/K-Maks/TXT.git
+   d61aede..1742703  main -> main
+
+ 9. Создать файл preferences.txt
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash/TXT (main)
+$ touch preferences.txt
+
+ 10. В файл preferences.txt” добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате TXT.
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash/TXT (main)
+$ vim preferences.txt
+
+в открывшемся редакторе нажать "i" и ввести
+
+Любимый фильм Lord of the Rings
+Любимый сериал - Billions
+Любимая еда - Борщ
+Любимое время года - All
+Страна, которую хотел бы посетить - Canada, New Zealand
+
+нажать "esc", нажать ":", ввести "wq", нажать "enter"
+
+ 11. Создать файл sklls.txt добавить информацию о скиллах которые будут изучены на курсе в формате TXT
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash/XML (main)
+$ vim skills.txt
+
+в открывшемся редакторе нажать "i" и ввести
+
+Theory_of_Software - Client-server architecture, SDLS, Kind_of_Software_testing, Testing_documentation
+Testing_directions - web-testing, mobile-tisting, API-testing
+API_testing - Postman
+
+нажать "esc", нажать ":", ввести "wq", нажать "enter"
+
+ 12. Сделать коммит в одну строку.
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash/TXT (main)
+$ git add preferences.txt skills.txt ; git commit -m 'add preferences and skills'
+warning: LF will be replaced by CRLF in preferences.txt.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in skills.txt.
+The file will have its original line endings in your working directory
+[main 8a8b767] add preferences and skills
+ 2 files changed, 8 insertions(+)
+ create mode 100644 preferences.txt
+ create mode 100644 skills.txt
+
+ 13. Отправить сразу 2 файла на внешний репозиторий.
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash/TXT (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 633 bytes | 211.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/K-Maks/TXT.git
+   1742703..8a8b767  main -> main
+
+ 14. На веб интерфейсе создать файл bug_report.txt.
+
+На веб интерфейсе GITHUB в личном кабинете в репозитории TXT нажимаем АDD FILE, выбираем Create New File
+
+ 15. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+
+Нажть внизу страницы Commit new file
+
+ 16. На веб интерфейсе модифицировать файл bug_report.txt, добавить баг репорт в формате TXT.
+
+На веб интерфейсе GITHUB в личном кабинете нажать на файл bug_report.json, нажать на кнопку "Edit this file"(карандаш), ввести:
+
+Bug template: widget hasn`t rounded corners
+Telegram nickname: @KMaksymS
+Bug_id: 40
+Title: after placing the widget on the desktop, the widget has right corners
+Severity: Midle
+Priority: Low
+Environment: 1) OnePlus Nord AC2001 (Oxygen OS 11.1.10.10.AC01DA), Android 11; 2) Honor 20 Android 10 Magic UI 4.0.0; 3) Xiaomi Redmi 5 Plus, android 8.1.0, MIU Global 11.0.2.0; 4)Honor 30, Android 10 Magic UI 4.0.0; 5) Samsung Galaxy A32, Android 11 (A325FXXU1AUH1); 6) Samsung S9 +, Android 10, One UI 2; 7) Pixel 4, Android 11; 8) Xiaomi Redmi Note 9S, Android 11 RKQ1.200826.02, MIUI Global 12.5.5</Environment>
+Precondition: App installed on a phone
+STR: 1) Open App; 2) Click button “add widget”
+AR: On the desktop the widget arises with right corners
+ER: On the desktop the widget arises with rounded corners
+
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+
+Прокрутить вниз страницы, внести название изменения в поле Commit changes, нажать "Commit changes"
+
+ 18. Синхронизировать внешний и локальный репозиторий TXT
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash/TXT (main)
+$ git fetch
+remote: Enumerating objects: 7, done.
+remote: Counting objects: 100% (7/7), done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 6 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (6/6), 1.73 KiB | 11.00 KiB/s, done.
+From https://github.com/K-Maks/TXT
+   8a8b767..489dfde  main       -> origin/main
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash/TXT (main)
+$ git pull
+Updating 8a8b767..489dfde
+Fast-forward
+ bug_report.txt | 11 +++++++++++
+ 1 file changed, 11 insertions(+)
+ create mode 100644 bug_report.txt
+
+MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash/TXT (main)
+$
+
