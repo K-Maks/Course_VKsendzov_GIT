@@ -116,10 +116,8 @@ $ echo "1
 16. Вывести список всех файлов в папке.
 
 MAKS@DESKTOP-1SB73TM MINGW64 /e/Course_VKsendzov/bash/dir_1/inner_dir_1
-$ ls -la
+$ ls -l *.*
 total 3
-drwxr-xr-x 1 MAKS 197121  0 May 28 12:59 ./
-drwxr-xr-x 1 MAKS 197121  0 May 28 11:56 ../
 -rw-r--r-- 1 MAKS 197121 73 May 28 12:01 tf_3.txt
 -rw-r--r-- 1 MAKS 197121 36 May 28 12:58 tf_4.txt
 -rw-r--r-- 1 MAKS 197121 30 May 28 12:59 tf_5.txt
