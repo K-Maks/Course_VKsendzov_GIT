@@ -7,264 +7,791 @@
 	},
 	"item": [
 		{
-			"name": "EP_1",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://162.55.220.72:5005/get_method?name=Maksim&age=32",
-					"protocol": "http",
-					"host": [
-						"162",
-						"55",
-						"220",
-						"72"
-					],
-					"port": "5005",
-					"path": [
-						"get_method"
-					],
-					"query": [
-						{
-							"key": "name",
-							"value": "Maksim"
-						},
-						{
-							"key": "age",
-							"value": "32"
+			"name": "HW_1",
+			"item": [
+				{
+					"name": "EP_1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://162.55.220.72:5005/get_method?name=Maksim&age=32",
+							"protocol": "http",
+							"host": [
+								"162",
+								"55",
+								"220",
+								"72"
+							],
+							"port": "5005",
+							"path": [
+								"get_method"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Maksim"
+								},
+								{
+									"key": "age",
+									"value": "32"
+								}
+							]
 						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "EP_2",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "formdata",
-					"formdata": [
-						{
-							"key": "name",
-							"value": "Maksim",
-							"type": "text"
-						},
-						{
-							"key": "age",
-							"value": "32",
-							"type": "text"
-						},
-						{
-							"key": "salary",
-							"value": "1000",
-							"type": "text"
-						}
-					]
+					},
+					"response": []
 				},
-				"url": {
-					"raw": "http://162.55.220.72:5005/user_info_3",
-					"protocol": "http",
-					"host": [
-						"162",
-						"55",
-						"220",
-						"72"
-					],
-					"port": "5005",
-					"path": [
-						"user_info_3"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "EP_3",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://162.55.220.72:5005/object_info_1?name=Maksim&age=32&weight=89",
-					"protocol": "http",
-					"host": [
-						"162",
-						"55",
-						"220",
-						"72"
-					],
-					"port": "5005",
-					"path": [
-						"object_info_1"
-					],
-					"query": [
-						{
-							"key": "name",
-							"value": "Maksim"
+				{
+					"name": "EP_2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Maksim",
+									"type": "text"
+								},
+								{
+									"key": "age",
+									"value": "32",
+									"type": "text"
+								},
+								{
+									"key": "salary",
+									"value": "1000",
+									"type": "text"
+								}
+							]
 						},
-						{
-							"key": "age",
-							"value": "32"
-						},
-						{
-							"key": "weight",
-							"value": "89"
+						"url": {
+							"raw": "http://162.55.220.72:5005/user_info_3",
+							"protocol": "http",
+							"host": [
+								"162",
+								"55",
+								"220",
+								"72"
+							],
+							"port": "5005",
+							"path": [
+								"user_info_3"
+							]
 						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "EP_4",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://162.55.220.72:5005/object_info_2?name=Maksim&age=32&salary=1000",
-					"protocol": "http",
-					"host": [
-						"162",
-						"55",
-						"220",
-						"72"
-					],
-					"port": "5005",
-					"path": [
-						"object_info_2"
-					],
-					"query": [
-						{
-							"key": "name",
-							"value": "Maksim"
-						},
-						{
-							"key": "age",
-							"value": "32"
-						},
-						{
-							"key": "salary",
-							"value": "1000"
-						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "EP_5",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://162.55.220.72:5005/object_info_3?name=Maksim&age=32&salary=1000",
-					"protocol": "http",
-					"host": [
-						"162",
-						"55",
-						"220",
-						"72"
-					],
-					"port": "5005",
-					"path": [
-						"object_info_3"
-					],
-					"query": [
-						{
-							"key": "name",
-							"value": "Maksim"
-						},
-						{
-							"key": "age",
-							"value": "32"
-						},
-						{
-							"key": "salary",
-							"value": "1000"
-						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "EP_6",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://162.55.220.72:5005/object_info_4?name=Maksim&age=32&salary=1000",
-					"protocol": "http",
-					"host": [
-						"162",
-						"55",
-						"220",
-						"72"
-					],
-					"port": "5005",
-					"path": [
-						"object_info_4"
-					],
-					"query": [
-						{
-							"key": "name",
-							"value": "Maksim"
-						},
-						{
-							"key": "age",
-							"value": "32"
-						},
-						{
-							"key": "salary",
-							"value": "1000"
-						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "EP_7",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "formdata",
-					"formdata": [
-						{
-							"key": "name",
-							"value": "Maksim",
-							"type": "text"
-						},
-						{
-							"key": "age",
-							"value": "32",
-							"type": "text"
-						},
-						{
-							"key": "salary",
-							"value": "1000",
-							"type": "text"
-						}
-					]
+					},
+					"response": []
 				},
-				"url": {
-					"raw": "http://162.55.220.72:5005/user_info_2",
-					"protocol": "http",
-					"host": [
-						"162",
-						"55",
-						"220",
-						"72"
-					],
-					"port": "5005",
-					"path": [
-						"user_info_2"
-					]
+				{
+					"name": "EP_3",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://162.55.220.72:5005/object_info_1?name=Maksim&age=32&weight=89",
+							"protocol": "http",
+							"host": [
+								"162",
+								"55",
+								"220",
+								"72"
+							],
+							"port": "5005",
+							"path": [
+								"object_info_1"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Maksim"
+								},
+								{
+									"key": "age",
+									"value": "32"
+								},
+								{
+									"key": "weight",
+									"value": "89"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EP_4",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://162.55.220.72:5005/object_info_2?name=Maksim&age=32&salary=1000",
+							"protocol": "http",
+							"host": [
+								"162",
+								"55",
+								"220",
+								"72"
+							],
+							"port": "5005",
+							"path": [
+								"object_info_2"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Maksim"
+								},
+								{
+									"key": "age",
+									"value": "32"
+								},
+								{
+									"key": "salary",
+									"value": "1000"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EP_5",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://162.55.220.72:5005/object_info_3?name=Maksim&age=32&salary=1000",
+							"protocol": "http",
+							"host": [
+								"162",
+								"55",
+								"220",
+								"72"
+							],
+							"port": "5005",
+							"path": [
+								"object_info_3"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Maksim"
+								},
+								{
+									"key": "age",
+									"value": "32"
+								},
+								{
+									"key": "salary",
+									"value": "1000"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EP_6",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://162.55.220.72:5005/object_info_4?name=Maksim&age=32&salary=1000",
+							"protocol": "http",
+							"host": [
+								"162",
+								"55",
+								"220",
+								"72"
+							],
+							"port": "5005",
+							"path": [
+								"object_info_4"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Maksim"
+								},
+								{
+									"key": "age",
+									"value": "32"
+								},
+								{
+									"key": "salary",
+									"value": "1000"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "EP_7",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Maksim",
+									"type": "text"
+								},
+								{
+									"key": "age",
+									"value": "32",
+									"type": "text"
+								},
+								{
+									"key": "salary",
+									"value": "1000",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://162.55.220.72:5005/user_info_2",
+							"protocol": "http",
+							"host": [
+								"162",
+								"55",
+								"220",
+								"72"
+							],
+							"port": "5005",
+							"path": [
+								"user_info_2"
+							]
+						}
+					},
+					"response": []
 				}
-			},
-			"response": []
+			]
+		},
+		{
+			"name": "HW_2",
+			"item": [
+				{
+					"name": "Task_1",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Body matches string\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"This is the first responce from server!\");\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://162.55.220.72:5005/first",
+							"protocol": "http",
+							"host": [
+								"162",
+								"55",
+								"220",
+								"72"
+							],
+							"port": "5005",
+							"path": [
+								"first"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Task_2",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"(manually) 'name' is correct\", function () {\r",
+									"    let jsonData = pm.response.json().name;\r",
+									"    pm.expect(jsonData).to.eql(\"Maksim\");\r",
+									"});\r",
+									"\r",
+									"pm.test(\"(manually) 'age' is correct\", function () {\r",
+									"    let jsonData = pm.response.json().age;\r",
+									"    pm.expect(jsonData).to.eql(\"32\");\r",
+									"});\r",
+									"\r",
+									"pm.test(\"(manually) 'salary' is correct\", function () {\r",
+									"    let jsonData = pm.response.json().salary;\r",
+									"    pm.expect(jsonData).to.eql(1000);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"(data from request) 'name' is correct\", function () {\r",
+									"    let jsonData = pm.response.json().name;\r",
+									"    pm.expect(jsonData).to.eql(request.data.name);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"(data from request) 'age' is correct\", function () {\r",
+									"    let jsonData = pm.response.json().age;\r",
+									"    pm.expect(jsonData).to.eql(request.data.age);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"(data from request) 'salary' is correct\", function () {\r",
+									"    let jsonData = pm.response.json().salary;\r",
+									"    pm.expect(jsonData).to.eql(parseInt(request.data.salary));\r",
+									"});\r",
+									"\r",
+									"let res = pm.response.json().family;\r",
+									"console.log(res)\r",
+									"\r",
+									"pm.test(\"(data from request) 'salary*4' is correct\", function () {\r",
+									"    let jsonData = pm.response.json().family.u_salary_1_5_year;\r",
+									"    pm.expect(jsonData).to.eql(parseInt(request.data.salary)*4);\r",
+									"});\r",
+									"\r",
+									"// let req = parseInt(request.data.salary);\r",
+									"// let res = pm.response.json().family.u_salary_1_5_year;\r",
+									"// console.log(req)\r",
+									"// console.log(res)\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Maksim",
+									"type": "text"
+								},
+								{
+									"key": "age",
+									"value": "32",
+									"type": "text"
+								},
+								{
+									"key": "salary",
+									"value": "1000",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://162.55.220.72:5005/user_info_3",
+							"protocol": "http",
+							"host": [
+								"162",
+								"55",
+								"220",
+								"72"
+							],
+							"port": "5005",
+							"path": [
+								"user_info_3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Task_3",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"let req = pm.request.url.getQueryString();\r",
+									"const eachParamArray = req.split('&');\r",
+									"// console.log(eachParamArray);\r",
+									"let params = {};\r",
+									"eachParamArray.forEach((param) => {\r",
+									"    const key = param.split('=')[0];\r",
+									"    const value = param.split('=')[1];\r",
+									"    Object.assign(params, {[key]: value});\r",
+									"});\r",
+									"// console.log(params.name);\r",
+									"\r",
+									"pm.test(\"(data from request) 'name' is correct\", function () {\r",
+									"    let jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.name).to.eql(params.name);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"(data from request) 'age' is correct\", function () {\r",
+									"    let jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.age).to.eql(params.age);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"(data from request) 'salary' is correct\", function () {\r",
+									"    let jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.salary).to.eql(parseInt(params.salary));\r",
+									"});\r",
+									"\r",
+									"let family = pm.response.json().family;\r",
+									"console.log(family);\r",
+									"\r",
+									"pm.test(\"Object 'dog' has parameter 'name'\", function () {\r",
+									"    pm.expect(pm.response.json().family.pets.dog).to.include.keys(\"name\");\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Object 'dog' has parameter 'age'\", function () {\r",
+									"    pm.expect(pm.response.json().family.pets.dog).to.include.keys(\"age\");\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Name dog is Luky\", function () {\r",
+									"    pm.expect(pm.response.json().family.pets.dog.name).to.eql('Luky');\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Dog age is 4\", function () {\r",
+									"    pm.expect(pm.response.json().family.pets.dog.age).to.eql(4);\r",
+									"});\r",
+									"\r",
+									"// let res = pm.response.json().name;\r",
+									"// console.log(res)\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://162.55.220.72:5005/object_info_3?name=Maksim&age=32&salary=1000",
+							"protocol": "http",
+							"host": [
+								"162",
+								"55",
+								"220",
+								"72"
+							],
+							"port": "5005",
+							"path": [
+								"object_info_3"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Maksim"
+								},
+								{
+									"key": "age",
+									"value": "32"
+								},
+								{
+									"key": "salary",
+									"value": "1000"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Task_4",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"let req = pm.request.url.getQueryString();\r",
+									"const eachParamArray = req.split('&');\r",
+									"// console.log(eachParamArray);\r",
+									"let params = {};\r",
+									"eachParamArray.forEach((param) => {\r",
+									"    const key = param.split('=')[0];\r",
+									"    const value = param.split('=')[1];\r",
+									"    Object.assign(params, {[key]: value});\r",
+									"});\r",
+									"// console.log(Object.keys(params).length);\r",
+									"\r",
+									"pm.test(\"(data from request) 'name' is correct\", function () {\r",
+									"    let jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.name).to.eql(params.name);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"(data from request) 'name' is correct\", function () {\r",
+									"    let jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.age).to.eql(parseInt(params.age));\r",
+									"});\r",
+									"\r",
+									"console.log('Salary req ',pm.response.json().salary);\r",
+									"\r",
+									"console.log('Salary res',params.salary);\r",
+									"\r",
+									"console.log('Salary req 0',pm.response.json().salary[0])\r",
+									"\r",
+									"console.log('Salary req 1',pm.response.json().salary[1])\r",
+									"\r",
+									"console.log('Salary req 2',pm.response.json().salary[2])\r",
+									"\r",
+									"pm.test(\"Req_salary[0] equals Res_salary\", function () {\r",
+									"    pm.expect(pm.response.json().salary[0]).to.eql(parseInt(params.salary));\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Req_salary[1] equals Res_salary*2\", function () {\r",
+									"    pm.expect(parseInt(pm.response.json().salary[1])).to.eql(parseInt(params.salary)*2);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Req_salary[2] equals Res_salary*3\", function () {\r",
+									"    pm.expect(parseInt(pm.response.json().salary[2])).to.eql(parseInt(params.salary)*3);\r",
+									"});\r",
+									"\r",
+									"pm.environment.set(\"name\", params.name);\r",
+									"pm.environment.set(\"age\", params.age);\r",
+									"pm.environment.set(\"salary\", params.salary);\r",
+									"\r",
+									"for (i = 0; i < pm.response.json().salary.length; i++) {\r",
+									"    console.log(pm.response.json().salary[i])\r",
+									"}\r",
+									"\r",
+									"// let res = pm.response.json().name;\r",
+									"// console.log(pm.response.json().salary.length)"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://162.55.220.72:5005/object_info_4?name=Maksim&age=32&salary=1000",
+							"protocol": "http",
+							"host": [
+								"162",
+								"55",
+								"220",
+								"72"
+							],
+							"port": "5005",
+							"path": [
+								"object_info_4"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Maksim"
+								},
+								{
+									"key": "age",
+									"value": "32"
+								},
+								{
+									"key": "salary",
+									"value": "1000"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Task_5",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"let req = pm.request.url.getQueryString();\r",
+									"const eachParamArray = req.split('&');\r",
+									"// console.log(eachParamArray);\r",
+									"let params = {};\r",
+									"eachParamArray.forEach((param) => {\r",
+									"    const key = param.split('=')[0];\r",
+									"    const value = param.split('=')[1];\r",
+									"    Object.assign(params, {[key]: value});\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Object has parameter 'start_qa_salary'\", function () {\r",
+									"    pm.expect(pm.response.json()).to.include.keys(\"start_qa_salary\");\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Object has parameter 'qa_salary_after_6_months'\", function () {\r",
+									"    pm.expect(pm.response.json()).to.include.keys(\"qa_salary_after_6_months\");\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Object has parameter 'qa_salary_after_12_months'\", function () {\r",
+									"    pm.expect(pm.response.json()).to.include.keys(\"qa_salary_after_12_months\");\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Object has parameter 'qa_salary_after_1.5_year'\", function () {\r",
+									"    pm.expect(pm.response.json()).to.include.keys(\"qa_salary_after_1.5_year\");\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Object has parameter 'qa_salary_after_3.5_years'\", function () {\r",
+									"    pm.expect(pm.response.json()).to.include.keys(\"qa_salary_after_3.5_years\");\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Object has parameter 'person'\", function () {\r",
+									"    pm.expect(pm.response.json()).to.include.keys(\"person\");\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Salary is correct\", function () {\r",
+									"    let jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.start_qa_salary).to.eql(parseInt(params.salary));\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Salary*2 is correct\", function () {\r",
+									"    let jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.qa_salary_after_6_months).to.eql(parseInt(params.salary)*2);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Salary*2.7 is correct\", function () {\r",
+									"    let jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData.qa_salary_after_12_months).to.eql(parseInt(params.salary)*2.7);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Salary*3.3 is correct\", function () {\r",
+									"    let jsonData = Object.values(pm.response.json());\r",
+									"    pm.expect(jsonData[1]).to.eql(parseInt(params.salary)*3.3);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Salary*3.8 is correct\", function () {\r",
+									"    let jsonData = Object.values(pm.response.json());\r",
+									"    pm.expect(jsonData[3]).to.eql(parseInt(params.salary)*3.8);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Salary from u_name is correct\", function () {\r",
+									"    let jsonData = pm.response.json().person.u_name;\r",
+									"    pm.expect(jsonData[1]).to.eql(parseInt(params.salary));\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Age from u_name is correct\", function () {\r",
+									"    let jsonData = pm.response.json().person.u_name;\r",
+									"    pm.expect(jsonData[1]).to.eql(parseInt(params.salary));\r",
+									"});\r",
+									"\r",
+									"pm.test(\"'u_salary_5_years' is correct\", function () {\r",
+									"    let jsonData = pm.response.json().person.u_salary_5_years;\r",
+									"    pm.expect(jsonData).to.eql(parseInt(params.salary)*4.2);\r",
+									"});\r",
+									"\r",
+									"for (i = 0; i < Object.entries(pm.response.json().person).length; i++) {\r",
+									"    console.log(Object.entries(pm.response.json().person)[i])\r",
+									"}\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://162.55.220.72:5005/object_info_2?name={{name}}&age={{age}}&salary={{salary}}",
+							"protocol": "http",
+							"host": [
+								"162",
+								"55",
+								"220",
+								"72"
+							],
+							"port": "5005",
+							"path": [
+								"object_info_2"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "{{name}}"
+								},
+								{
+									"key": "age",
+									"value": "{{age}}"
+								},
+								{
+									"key": "salary",
+									"value": "{{salary}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Task_6(A.Karpovich)",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var req_data = pm.request.url.query.toObject();\r",
+									"\r",
+									"console.log(Right_age);"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"let Right_name = pm.environment.set(\"name\", '');\r",
+									"let Right_age = pm.environment.set(\"age\", '32');\r",
+									"let Right_salary = pm.environment.set(\"salary\", '1000');"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://162.55.220.72:5005/object_info_2?name={{name}}&age={{age}}&salary={{salary}}",
+							"protocol": "http",
+							"host": [
+								"162",
+								"55",
+								"220",
+								"72"
+							],
+							"port": "5005",
+							"path": [
+								"object_info_2"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "{{name}}"
+								},
+								{
+									"key": "age",
+									"value": "{{age}}"
+								},
+								{
+									"key": "salary",
+									"value": "{{salary}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
 		}
 	]
 }
